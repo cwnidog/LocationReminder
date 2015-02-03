@@ -8,9 +8,13 @@
 
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
+#import "Queue.h"
+#import "Stack.h"
 
 @interface MapViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapViewOutlet;
+@property (strong, nonatomic) Stack *testStack;
+@property (strong, nonatomic) Queue *testQueue;
 
 @end
 
@@ -35,7 +39,23 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
+  //MARK: test code for Stack and Queue
+  _testQueue = [[Queue alloc] init];
+  _testStack = [[Stack alloc] init];
+  
+  [_testQueue enqueue:@"First string"];
+  [_testQueue enqueue:@"Second string"];
+  NSLog(@"%@",[_testQueue peek]);
+  NSLog(@"%@",[_testQueue dequeue]);
+  NSLog(@"%@",[_testQueue peek]);
+  
+  [_testStack pushString:@"First on"];
+  [_testStack pushString:@"Second on"];
+  NSLog(@"%@",[_testStack inspect]);
+  NSLog(@"%@",[_testStack popString]);
+  NSLog(@"%@",[_testStack inspect]);
+
 } // viewDidLoad()
 
 - (void)didReceiveMemoryWarning {

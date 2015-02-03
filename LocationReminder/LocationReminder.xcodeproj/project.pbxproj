@@ -16,6 +16,8 @@
 		2F827B171A801B0700F9E895 /* LocationReminderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827B161A801B0700F9E895 /* LocationReminderTests.m */; };
 		2F827B211A801B1D00F9E895 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F827B201A801B1D00F9E895 /* MapKit.framework */; };
 		2F827B271A801D7E00F9E895 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827B261A801D7E00F9E895 /* MapViewController.m */; };
+		2F827B2A1A80307E00F9E895 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827B291A80307E00F9E895 /* Stack.m */; };
+		2F827B2D1A803BC300F9E895 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827B2C1A803BC300F9E895 /* Queue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,10 @@
 		2F827B201A801B1D00F9E895 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F827B251A801D7E00F9E895 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2F827B261A801D7E00F9E895 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		2F827B281A80307E00F9E895 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		2F827B291A80307E00F9E895 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		2F827B2B1A803BC300F9E895 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		2F827B2C1A803BC300F9E895 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,8 @@
 		2F827B221A801B7200F9E895 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F827B2B1A803BC300F9E895 /* Queue.h */,
+				2F827B281A80307E00F9E895 /* Stack.h */,
 				2F827B251A801D7E00F9E895 /* MapViewController.h */,
 				2F827B011A801B0700F9E895 /* ViewController.h */,
 			);
@@ -139,6 +147,8 @@
 		2F827B231A801B7F00F9E895 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F827B2C1A803BC300F9E895 /* Queue.m */,
+				2F827B291A80307E00F9E895 /* Stack.m */,
 				2F827B261A801D7E00F9E895 /* MapViewController.m */,
 			);
 			name = View;
@@ -260,6 +270,8 @@
 				2F827B031A801B0700F9E895 /* ViewController.m in Sources */,
 				2F827B001A801B0700F9E895 /* AppDelegate.m in Sources */,
 				2F827AFD1A801B0700F9E895 /* main.m in Sources */,
+				2F827B2D1A803BC300F9E895 /* Queue.m in Sources */,
+				2F827B2A1A80307E00F9E895 /* Stack.m in Sources */,
 				2F827B271A801D7E00F9E895 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +465,7 @@
 				2F827B1C1A801B0700F9E895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F827B1D1A801B0700F9E895 /* Build configuration list for PBXNativeTarget "LocationReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +474,7 @@
 				2F827B1F1A801B0700F9E895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
