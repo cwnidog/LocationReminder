@@ -19,6 +19,8 @@
 @end
 
 @implementation MapViewController
+
+// MARK: Button Actions
 - (IBAction)location1Button:(id)sender
 {
   [_mapViewOutlet setRegion:MKCoordinateRegionMake(CLLocationCoordinate2DMake(42.72, -70.99), MKCoordinateSpanMake(0.05, 0.05))];
@@ -57,20 +59,5 @@
   NSLog(@"%@",[_testStack inspect]);
 
 } // viewDidLoad()
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
