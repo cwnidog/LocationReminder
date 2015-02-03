@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MapViewController.h"
+
 #import "Stack.h"
 
 @interface ViewController ()
@@ -15,14 +17,13 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
-}
+  
+  //MapViewController *mapVC = [MapViewController new];
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
-}
+} // viewDidLoad
+
 
 @end
