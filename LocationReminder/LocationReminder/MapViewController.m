@@ -140,7 +140,7 @@
 
 - (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-  MKPointAnnotation *annotation = view.annotation;
+  //MKPointAnnotation *annotation = view.annotation;
   
   // perform the segue to the reminder detail view
   [self performSegueWithIdentifier:@"SHOW_DETAIL" sender:self];
