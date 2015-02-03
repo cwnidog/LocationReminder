@@ -60,7 +60,7 @@
     if ([CLLocationManager authorizationStatus] == 0) // not authorized
     {
       // request authorization
-      [self.locationManager requestAlwaysAuthorization];
+      [self.locationManager requestWhenInUseAuthorization];
     } // if not authorized
     else if ([CLLocationManager authorizationStatus] != 0) // we are authorized
     {
@@ -99,7 +99,7 @@
 {
   UILongPressGestureRecognizer *longPress = (UILongPressGestureRecognizer *)sender;
   
-  if (longPress.state == 3) // ended
+  if (longPress.state == 3) // 3 == ended
   {
     CGPoint location = [longPress locationInView:self.mapView]; // get x,y view coordinates
     
@@ -117,6 +117,8 @@
 - (void) locationManager: (CLLocationManager *) manager didChangeAuthorizationStatus: (CLAuthorizationStatus) status
   {
     NSLog(@"The new status is %d", status);
+    self.mapView.showsUserLocation = true;
+
   } // locationManager()
 
 // log changes in location
