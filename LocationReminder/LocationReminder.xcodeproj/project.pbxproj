@@ -149,7 +149,6 @@
 			children = (
 				2F827B2C1A803BC300F9E895 /* Queue.m */,
 				2F827B291A80307E00F9E895 /* Stack.m */,
-				2F827B261A801D7E00F9E895 /* MapViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 		2F827B241A801B8700F9E895 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2F827B261A801D7E00F9E895 /* MapViewController.m */,
 				2F827B021A801B0700F9E895 /* ViewController.m */,
 			);
 			name = Controller;
