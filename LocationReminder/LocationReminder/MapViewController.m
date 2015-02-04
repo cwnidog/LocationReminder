@@ -119,7 +119,7 @@
     NSLog(@"The new status is %d", status);
     
     // if we're moving to authorized status show the user's location on the map
-    if (status >= 3) // the various authorized statuses are 3, 4, and 5
+    if (status >= 3) // the various authorized statuses are 3 and 4
     {
       self.mapView.showsUserLocation = true; // show the user location
     }
