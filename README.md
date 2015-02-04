@@ -15,3 +15,8 @@ does not support playgrounds
 * Add a long press gesture to the map view
 * On long press, add an annotation onto the map view, which has a callout with an accessory button
 * Upon pressing the accessory button, segue to a AddReminderDetailViewController
+
+## Regions And Notifications
+----------------------------
+* Using Region monitoring & local notifications, schedule a location based reminder in the AddReminderDetailViewController
+* Add a visual map annotation wherever a reminder is added, using NSNotificationCenter to communicate from the Detail view controller back to the primary map view controller
