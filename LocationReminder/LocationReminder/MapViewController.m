@@ -62,7 +62,7 @@
       // request authorization
       [self.locationManager requestWhenInUseAuthorization];
     } // if not authorized
-    else if ([CLLocationManager authorizationStatus] != 0) // we are authorized
+    else if ([CLLocationManager authorizationStatus] >= 3) // we are authorized
     {
       self.mapView.showsUserLocation = true;
       [self.locationManager startMonitoringSignificantLocationChanges];
@@ -117,7 +117,12 @@
 - (void) locationManager: (CLLocationManager *) manager didChangeAuthorizationStatus: (CLAuthorizationStatus) status
   {
     NSLog(@"The new status is %d", status);
-    self.mapView.showsUserLocation = true;
+    
+    // if we're moving to authorized status show the user's location on the map
+    if (status >= 3) // the various authorized statuses are 3, 4, and 5
+    {
+      self.mapView.showsUserLocation = true; // show the user location
+    }
 
   } // locationManager()
 
