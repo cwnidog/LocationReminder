@@ -187,6 +187,10 @@
   
   // define the overlay
   NSDictionary *userInfo = notification.userInfo;
+  
+  // make the annotation title match the reminder
+  self.selectedAnnotation.title = userInfo[@"title"];
+  
   CLCircularRegion * region = userInfo[@"reminder"];
   MKCircle *circleOverlay = [MKCircle circleWithCenterCoordinate:region.center radius:region.radius];
   

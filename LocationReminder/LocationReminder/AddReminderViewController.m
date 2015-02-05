@@ -36,7 +36,7 @@
     CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:self.annotation.coordinate radius:200 identifier:self.userText.text];
     
     // send a notification to any observers that we've added a reminder
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ReminderAdded" object:self userInfo:@{@"reminder" : region}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ReminderAdded" object:self userInfo:@{@"reminder" : region, @"title" : self.userText.text}];
     [self.navigationController popViewControllerAnimated:true];
   } // if monitoring is available for the circular region
 } // pressedAddReminder()
