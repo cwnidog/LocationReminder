@@ -20,3 +20,7 @@ does not support playgrounds
 ----------------------------
 * Using Region monitoring & local notifications, schedule a location based reminder in the AddReminderDetailViewController
 * Add a visual map annotation wherever a reminder is added, using NSNotificationCenter to communicate from the Detail view controller back to the primary map view controller
+
+## WatchKit
+-----------
+* Create a WatchKit extension for your app, that will display the regions that are being monitored. Use the watch kit map view to show where the region actually is.
