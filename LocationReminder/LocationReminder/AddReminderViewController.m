@@ -32,8 +32,17 @@
   // make sure monitoring is available
   if ([CLLocationManager isMonitoringAvailableForClass:[CLCircularRegion class]])
   {
+    // if the user didn't enter a name for the reminder, give it a generic name
+    if (self.userText.text.length == 0) // empty string
+    {
+      self.userText.text = @"Generic Reminder";
+    } // if userText.text
+    
     // create a region 200m in diameter at the pin, reminder name provided by the user
     CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:self.annotation.coordinate radius:200 identifier:self.userText.text];
+    
+    // start checking to see if we enter the region
+    [self.locationManager startMonitoringForRegion:region];
     
     // send a notification to any observers that we've added a reminder
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ReminderAdded" object:self userInfo:@{@"reminder" : region, @"title" : self.userText.text}];
