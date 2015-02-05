@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2A38D61A82B9060073AEF3 /* AddReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A38D51A82B9060073AEF3 /* AddReminderViewController.m */; };
 		2F827AFD1A801B0700F9E895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827AFC1A801B0700F9E895 /* main.m */; };
 		2F827B001A801B0700F9E895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827AFF1A801B0700F9E895 /* AppDelegate.m */; };
 		2F827B031A801B0700F9E895 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F827B021A801B0700F9E895 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2A38D41A82B9060073AEF3 /* AddReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderViewController.h; sourceTree = "<group>"; };
+		2F2A38D51A82B9060073AEF3 /* AddReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderViewController.m; sourceTree = "<group>"; };
 		2F827AF71A801B0700F9E895 /* LocationReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F827AFB1A801B0700F9E895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F827AFC1A801B0700F9E895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,8 +100,8 @@
 				2F827B241A801B8700F9E895 /* Controller */,
 				2F827B231A801B7F00F9E895 /* View */,
 				2F827B221A801B7200F9E895 /* Model */,
-				2F827AFE1A801B0700F9E895 /* AppDelegate.h */,
 				2F827AFF1A801B0700F9E895 /* AppDelegate.m */,
+				2F827AFE1A801B0700F9E895 /* AppDelegate.h */,
 				2F827B041A801B0700F9E895 /* Main.storyboard */,
 				2F827B071A801B0700F9E895 /* Images.xcassets */,
 				2F827B091A801B0700F9E895 /* LaunchScreen.xib */,
@@ -138,6 +141,7 @@
 			children = (
 				2F827B2B1A803BC300F9E895 /* Queue.h */,
 				2F827B281A80307E00F9E895 /* Stack.h */,
+				2F2A38D41A82B9060073AEF3 /* AddReminderViewController.h */,
 				2F827B251A801D7E00F9E895 /* MapViewController.h */,
 				2F827B011A801B0700F9E895 /* ViewController.h */,
 			);
@@ -156,6 +160,7 @@
 		2F827B241A801B8700F9E895 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2F2A38D51A82B9060073AEF3 /* AddReminderViewController.m */,
 				2F827B261A801D7E00F9E895 /* MapViewController.m */,
 				2F827B021A801B0700F9E895 /* ViewController.m */,
 			);
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2A38D61A82B9060073AEF3 /* AddReminderViewController.m in Sources */,
 				2F827B031A801B0700F9E895 /* ViewController.m in Sources */,
 				2F827B001A801B0700F9E895 /* AppDelegate.m in Sources */,
 				2F827AFD1A801B0700F9E895 /* main.m in Sources */,

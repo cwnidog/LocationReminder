@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="1514" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Reminder View Controller-->
         <scene sceneID="VRT-6W-iS7">
             <objects>
-                <viewController id="pYj-r9-hkw" sceneMemberID="viewController">
+                <viewController id="pYj-r9-hkw" customClass="AddReminderViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r1a-Tu-Gdt"/>
                         <viewControllerLayoutGuide type="bottom" id="vtu-l9-pt8"/>
@@ -89,8 +89,33 @@
                     <view key="view" contentMode="scaleToFill" id="H9J-6l-wxW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reminder Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-b1-kn4">
+                                <rect key="frame" x="238" y="72" width="125" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTh-O8-IYQ">
+                                <rect key="frame" x="251" y="285" width="99" height="30"/>
+                                <state key="normal" title="Add Reminder">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedAddReminder:" destination="pYj-r9-hkw" eventType="touchUpInside" id="iJm-WQ-nTE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="CTh-O8-IYQ" secondAttribute="centerX" id="JTE-gL-Lee"/>
+                            <constraint firstItem="5ff-b1-kn4" firstAttribute="top" secondItem="r1a-Tu-Gdt" secondAttribute="bottom" constant="8" id="bmW-4W-Jta"/>
+                            <constraint firstAttribute="centerX" secondItem="5ff-b1-kn4" secondAttribute="centerX" id="deY-Ro-HBw"/>
+                            <constraint firstAttribute="centerY" secondItem="CTh-O8-IYQ" secondAttribute="centerY" id="vQ4-ue-kfy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userText" destination="5ff-b1-kn4" id="IzK-xH-r6J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Tc-83-BOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
