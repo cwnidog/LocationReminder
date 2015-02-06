@@ -110,6 +110,7 @@
 		2F827B291A80307E00F9E895 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		2F827B2B1A803BC300F9E895 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		2F827B2C1A803BC300F9E895 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		2F9346D41A8565FF00313039 /* LinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedList.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +211,7 @@
 		2F827AF91A801B0700F9E895 /* LocationReminder */ = {
 			isa = PBXGroup;
 			children = (
+				2F9346D41A8565FF00313039 /* LinkedList.playground */,
 				2F827B241A801B8700F9E895 /* Controller */,
 				2F827B231A801B7F00F9E895 /* View */,
 				2F827B221A801B7200F9E895 /* Model */,
@@ -726,6 +728,7 @@
 				2F3D257F1A840D6E003F19A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F3D25811A840D6E003F19A9 /* Build configuration list for PBXNativeTarget "LocationReminder WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -734,6 +737,7 @@
 				2F3D257D1A840D6E003F19A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F827AF21A801B0700F9E895 /* Build configuration list for PBXProject "LocationReminder" */ = {
 			isa = XCConfigurationList;
