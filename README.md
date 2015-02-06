@@ -24,3 +24,7 @@ does not support playgrounds
 ## WatchKit
 -----------
 * Create a WatchKit extension for your app, that will display the regions that are being monitored. Use the watch kit map view to show where the region actually is.
+
+## LinkedList
+-------------
+* Added a playground demonstrating creating a linked list and adding nodes to its head and tail.
